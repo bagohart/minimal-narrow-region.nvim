@@ -51,3 +51,8 @@ local function NarrowRegionClose()
     narrow_region_original_buffer_id = nil
     vim.cmd('normal! gv')
 end
+
+return {
+    NarrowRegionOpen = NarrowRegionOpen,
+    NarrowRegionClose = NarrowRegionClose,
+}
