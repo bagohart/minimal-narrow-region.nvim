@@ -51,6 +51,3 @@ local function NarrowRegionClose()
     narrow_region_original_buffer_id = nil
     vim.cmd('normal! gv')
 end
-
-vim.keymap.set('x', '<Plug>(minimal-narrow-region-open)', NarrowRegionOpen)
-vim.keymap.set('n', '<Plug>(minimal-narrow-region-close)', NarrowRegionClose)
